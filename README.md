@@ -1,6 +1,8 @@
 # user-list
 A list of friends to filter the search results
 
+<p><img src="https://imgur.com/ebox6Sk" alt="user-list-preview" /></p>
+
 ## Features
 - listing users from user api
 - searching users by name
