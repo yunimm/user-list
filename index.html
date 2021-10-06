@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserList</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/00ff6540c9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&family=Open+Sans:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+      <div class="container">
+        <div class="row" id="header">
+          <div class="col-md-9 navbar-light" id="header-left">
+            <img src="https://imgur.com/x05GXqC.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            <a class="navbar-brand" href="index.html">
+              Home
+            </a>
+          </div>
+          <div class="col-md-3 navbar-light" id="header-right">
+              <i class="fas fa-bell"></i>
+              <i class="fas fa-comments"></i>
+              <a class="navbar-brand" href="#">Hi!, yu!</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" id="search-bar">
+            <nav class="navbar navbar-light">
+              <a class="navbar-brand">Contacts</a>
+                <form class="form-inline" id="search-form">
+                  <i class="fas fa-search"></i>
+                  <input class="form-control mr-sm-2" type="search" id="search-input" placeholder="Search by names or tags" aria-label="Search">
+                  <button class="btn btn-outline-secondary my-2 my-sm-0" id="button" type="submit">Search</button>
+                </form>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 navbar-light bg-light">
+          <nav class="navbar navbar-expand-md">
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">All <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="favorite.html">Favorite</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+         </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mt-3 ml-3" id="numberOfUsers">
+            <!-- <h5>Number</h5> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row" id="user-list">
+          <!-- 卡片 -->
+          <!-- <div class="col-md-3 mt-3">
+            <div class="card">
+              <i class="fas fa-heart" id="heart"></i>
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div> -->
+            <!--  -->
+          <!-- </div>
+          <div class="col-md-3 mt-3">
+            <div class="card">
+              <i class="fas fa-heart" id="heart"></i>
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-3">
+            <div class="card">
+              <i class="fas fa-heart" id="heart"></i>
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mt-3">
+            <div class="card">
+              <i class="fas fa-heart" id="heart"></i>
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- modal -->
+      <div class="modal" tabindex="-1" id="info-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="user-modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="user-modal-birthday">birthday: 2020/01/05</p>
+              <p id="user-modal-age">age: 28</p>
+              <p id="user-modal-gender">gender: male</p>
+              <p id="user-modal-email">email: email@email.com</p>
+              <p id="user-modal-region">region: US</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mt-3">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center" id="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <!-- <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>

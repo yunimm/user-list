@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+p, a, input, label, textarea, span, ul, li,
+h1, h2, h3, h4, h5, h6{
+    color: #666666;
+}
+
+p, a, input, label, textarea, span, ul, li{
+    font-family: 'Open Sans', sans-serif;;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+header{
+    max-width: 100%;
+
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar{
+    justify-content: left;
+}
+
+#header-right{
+    padding: 0 30px;
+}
+
+
+#header-left a,
+#header-right{
+
+    padding-top: 30px;
+    font-size:18px;
+
+}   
+
+#header-right i{
+    padding: 0 10px;
+
+}
+
+.form-inline{
+    position: relative;
+    display: inline-block;
+}
+
+.form-inline i{
+    position: absolute;
+    left:10px;
+    top:calc(50% - 0.5em);
+}
+
+.form-inline input{
+    text-indent: 20px;
+}
+
+#search-bar .navbar-brand{
+    font-size: 32px;
+}
+
+#search-bar .form-control{
+    height:35px;
+    width: 250px;
+}
+
+#navbarTogglerDemo01 a.nav-link{
+    border-bottom: 1px solid transparent;
+}
+
+#navbarTogglerDemo01 a.nav-link:hover {
+    box-shadow: 0 -3px #FEBF44 inset; 
+  }
+
+.card{
+    position: relative;
+    align-items: center;
+  }
+
+.card img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.card .card-body {
+   
+   /* background-color: #FEBF44;  */
+   text-align:center;
+}
+
+.card .card-body .fa-map-marker-alt{
+    padding-right: 5px;
+}
+
+#heart{
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    font-size: 25px;
+}
+
+#heart:hover{
+    color: #C73E3A;
+}
+
+
